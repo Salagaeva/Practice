@@ -1,0 +1,19 @@
+.major{
+    padding: 100px 40px;
+}
+  
+@media (max-width: 550px) {
+    .PopularContent{
+      margin: 0px 0px;
+    }
+    .major{
+        padding: 70px 20px;
+    }
+}
+
+@media (max-width: 1850px) {
+    .PopularContent {
+        justify-content: space-between;; 
+    }
+}
+    

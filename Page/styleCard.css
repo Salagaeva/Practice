@@ -1,0 +1,146 @@
+:root{
+    --cl1: #071013;
+    --cl2: #F6E8EA;
+    --cl3: #9CC5A1;
+    --cl4: #49A078;
+    --cl5: #216869;
+    --cl6: #fff;
+}
+
+.gameplay{
+    padding: 100px 40px;
+}
+
+.Card{
+    padding: 50px;
+    border-radius: 30px;
+    border: 3px solid;
+    border-color: rgba(156, 197, 161, 0.75);
+    box-shadow: 0px 0px 15px rgba(156, 197, 161, 0.25);
+    display: flex;
+    gap: 40px;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.insideText{
+    display: flex;
+    flex-direction: column;
+    max-width: 858px;
+}
+
+.titleCard{
+    color: var(--cl2);
+    font-size: 64px;
+    font-weight: bold;
+}
+
+.characteristic{
+    margin-top: 20px;
+    display: flex;
+    gap: 40px;
+}
+
+.characteristicText{
+    color: var(--cl4);
+    font-size: 32px;
+    font-weight: 500;
+}
+
+.definition{
+    margin-top: 60px;
+    color: var(--cl2);
+    font-size: 24px;
+    font-weight: 400;
+}
+
+.pricing{
+    margin-top: 20px;
+    color: var(--cl2);
+    font-size: 64px;
+    font-weight:bolder;
+}
+
+.buttonBox{
+    margin-top: 60px;
+    display: flex;
+    gap: 100px;
+}
+
+button{
+    font-family: "Montserrat", serif;
+    width: 340px;
+    height: 90px;
+    background-color: var(--cl1);
+    font-size: 24px;
+    font-weight:600;
+    color: var(--cl2);
+    border: 3px solid;
+    border-color:var(--cl3);
+    border-radius: 30px;
+    transition: background-color 0.3s ease;
+}
+
+button:hover{
+    background-color: #1B4351;
+}
+.ImgBig{
+    display: none;
+}
+
+@media (max-width: 1800px) {
+    .Card{
+        justify-content: center;
+    }
+  .ImgBig{
+    display: block;
+    width: 100%;
+    }
+    .ImgBig1{
+        display: none;
+    }
+    .ImgBig{
+        margin-top: 40px;
+    }
+}
+
+@media (max-width: 1000px) {
+    .buttonBox {
+        gap: 20px;
+        flex-direction: column;
+        align-items: center;
+    }
+    button{
+        width: 100%;
+    }
+}
+
+@media (max-width: 600px) {
+    .titleCard{
+        font-size: 30px;
+    }
+    .characteristicText{
+        font-size: 16px;
+    }
+    .definition{
+        margin-top: 20px;
+        font-size: 14px;
+    }
+    .pricing{
+        margin-top: 35px;
+        font-size: 29px;
+    }
+    button{
+        font-size: 20px;
+    }
+    .ImgBig{
+        margin-top: 35px;
+    }
+    .buttonBox{
+        margin-top: 40px;
+    }
+    .gameplay{
+        padding: 50px 0px;
+    }
+}
