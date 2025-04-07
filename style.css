@@ -334,7 +334,6 @@ footer {
     flex-direction: column;
     gap: 10px;
   }
-
   .TextAbout {
     font-size: 16px;
   }
@@ -347,6 +346,11 @@ footer {
   .footerText {
     font-size: 15px;
   }
-  
+  header {
+    align-items: flex-end;
+  }
+  .Upper {
+    align-items: flex-end;
+  }
 }
 
